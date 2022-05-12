@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/arctx/Desktop/Blippy/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml",
+            "map": [
+                {
+                    "source": "/Users/arctx/.gradle/caches/transforms-2/files-2.1/de16f4b64dab27be6e205eda03cecad0/jetified-media2-session-1.1.3/res/values-ky/values-ky.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,164,264,362,484",
+                        "endColumns": "108,99,97,121,127",
+                        "endOffsets": "159,259,357,479,607"
+                    },
+                    "to": {
+                        "startLines": "2,12,13,14,15",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,852,952,1050,1172",
+                        "endColumns": "108,99,97,121,127",
+                        "endOffsets": "159,947,1045,1167,1295"
+                    }
+                },
+                {
+                    "source": "/Users/arctx/.gradle/caches/transforms-2/files-2.1/cb070aa8ca3e58b91c7d3f9173b5f308/jetified-exoplayer-core-2.17.0/res/values-ky/values-ky.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,126,191,262,333,420,491,578,662",
+                        "endColumns": "70,64,70,70,86,70,86,83,80",
+                        "endOffsets": "121,186,257,328,415,486,573,657,738"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "164,235,300,371,442,529,600,687,771",
+                        "endColumns": "70,64,70,70,86,70,86,83,80",
+                        "endOffsets": "230,295,366,437,524,595,682,766,847"
+                    }
+                },
+                {
+                    "source": "/Users/arctx/.gradle/caches/transforms-2/files-2.1/b9a960218f5163997c0fdfa3d3078c0e/core-1.7.0/res/values-ky/values-ky.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "16",
+                        "startColumns": "4",
+                        "startOffsets": "1300",
+                        "endColumns": "100",
+                        "endOffsets": "1396"
+                    }
+                }
+            ]
+        }
+    ]
+}

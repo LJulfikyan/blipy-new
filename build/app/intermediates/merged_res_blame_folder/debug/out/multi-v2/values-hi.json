@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/arctx/Desktop/Blippy/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-hi/values-hi.xml",
+            "map": [
+                {
+                    "source": "/Users/arctx/.gradle/caches/transforms-2/files-2.1/cb070aa8ca3e58b91c7d3f9173b5f308/jetified-exoplayer-core-2.17.0/res/values-hi/values-hi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,123,189,260,328,424,492,615,736",
+                        "endColumns": "67,65,70,67,95,67,122,120,86",
+                        "endOffsets": "118,184,255,323,419,487,610,731,818"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "161,229,295,366,434,530,598,721,842",
+                        "endColumns": "67,65,70,67,95,67,122,120,86",
+                        "endOffsets": "224,290,361,429,525,593,716,837,924"
+                    }
+                },
+                {
+                    "source": "/Users/arctx/.gradle/caches/transforms-2/files-2.1/de16f4b64dab27be6e205eda03cecad0/jetified-media2-session-1.1.3/res/values-hi/values-hi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,161,258,354,473",
+                        "endColumns": "105,96,95,118,125",
+                        "endOffsets": "156,253,349,468,594"
+                    },
+                    "to": {
+                        "startLines": "2,12,13,14,15",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,929,1026,1122,1241",
+                        "endColumns": "105,96,95,118,125",
+                        "endOffsets": "156,1021,1117,1236,1362"
+                    }
+                },
+                {
+                    "source": "/Users/arctx/.gradle/caches/transforms-2/files-2.1/b9a960218f5163997c0fdfa3d3078c0e/core-1.7.0/res/values-hi/values-hi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "16",
+                        "startColumns": "4",
+                        "startOffsets": "1367",
+                        "endColumns": "100",
+                        "endOffsets": "1463"
+                    }
+                }
+            ]
+        }
+    ]
+}

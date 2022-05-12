@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/arctx/Desktop/Blippy/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "/Users/arctx/.gradle/caches/transforms-2/files-2.1/cb070aa8ca3e58b91c7d3f9173b5f308/jetified-exoplayer-core-2.17.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,195,267,333,410,477,578,671",
+                        "endColumns": "69,69,71,65,76,66,100,92,69",
+                        "endOffsets": "120,190,262,328,405,472,573,666,736"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "161,231,301,373,439,516,583,684,777",
+                        "endColumns": "69,69,71,65,76,66,100,92,69",
+                        "endOffsets": "226,296,368,434,511,578,679,772,842"
+                    }
+                },
+                {
+                    "source": "/Users/arctx/.gradle/caches/transforms-2/files-2.1/b9a960218f5163997c0fdfa3d3078c0e/core-1.7.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "16",
+                        "startColumns": "4",
+                        "startOffsets": "1308",
+                        "endColumns": "100",
+                        "endOffsets": "1404"
+                    }
+                },
+                {
+                    "source": "/Users/arctx/.gradle/caches/transforms-2/files-2.1/de16f4b64dab27be6e205eda03cecad0/jetified-media2-session-1.1.3/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,161,259,360,487",
+                        "endColumns": "105,97,100,126,134",
+                        "endOffsets": "156,254,355,482,617"
+                    },
+                    "to": {
+                        "startLines": "2,12,13,14,15",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,847,945,1046,1173",
+                        "endColumns": "105,97,100,126,134",
+                        "endOffsets": "156,940,1041,1168,1303"
+                    }
+                }
+            ]
+        }
+    ]
+}
