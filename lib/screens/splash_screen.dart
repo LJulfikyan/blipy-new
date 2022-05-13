@@ -11,6 +11,15 @@ import '../main.dart';
 class SplashScreen extends BaseScreen<SplashController> {
   SplashScreen({Key? key}) : super(key: key);
 
+  Widget route() {
+    if (BlipyUtils.hasToken()) {
+      AppConfig.tokenStringKey = SecureStorage.readSecureData('token');
+      return const MainScreen();
+    } else {
+      return const BlippyLoginPage();
+    }
+  }
+
   @override
   Widget builder() {
     return Container(
@@ -25,37 +34,11 @@ class SplashScreen extends BaseScreen<SplashController> {
       child: Center(
         child: SplashWidget(
             onComplete: () => {
-
-    Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (context) => const BlippyLoginPage(
-                    title: 'LOGIN',
-                  )),
-    )
-
-
-                  // if (BlipyUtils.hasToken())
-                  //   {
-                  //     AppConfig.tokenStringKey = SecureStorage.readSecureData('token') ,
-                  //     Navigator.of(context).pop(),
-                  //     Navigator.push(
-                  //       context,
-                  //       MaterialPageRoute(
-                  //           builder: (context) => const MainScreen()),
-                  //     ),
-                  //   }
-                  // else
-                  //   {
-                  //     Navigator.of(context).pop(),
-                  //     Navigator.push(
-                  //       context,
-                  //       MaterialPageRoute(
-                  //           builder: (context) => const BlippyLoginPage(
-                  //                 title: 'LOGIN',
-                  //               )),
-                  //     )
-                  //   }
+                  Navigator.of(context).pop(),
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => route()),
+                  ),
                 }),
       ),
     );

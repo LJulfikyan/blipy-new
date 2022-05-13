@@ -6,6 +6,13 @@ class SplashController extends BaseController {
     BlipyUtils.getCode();
     BlipyUtils.getLangStrings();
     BlipyUtils.initialTextValue();
+    bool hasToken = BlipyUtils.hasToken();
+
+    void homeRoute (){
+      if(hasToken){
+
+      }
+    }
 
   }
 }

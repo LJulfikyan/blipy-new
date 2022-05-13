@@ -14,13 +14,13 @@ class BlipySignIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: BlipySignUpPage(title: 'SIGN_IN'),
+      home: BlipySignUpPage(),
     );
   }
 }
 
 class BlipySignUpPage extends StatefulWidget {
-  const BlipySignUpPage({Key? key, required String title}) : super(key: key);
+  const BlipySignUpPage({Key? key, }) : super(key: key);
 
 
 
@@ -99,7 +99,7 @@ class BlipySignUpPageState extends State<BlipySignUpPage> {
                         context,
                         MaterialPageRoute(
                             builder: (context) =>
-                                const BlippyLoginPage(title: 'Sign_in')));
+                                const BlippyLoginPage()));
                   },
                   child: Container(
                     color: Colors.transparent,

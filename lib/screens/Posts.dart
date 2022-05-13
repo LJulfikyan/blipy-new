@@ -17,7 +17,8 @@ class PostsPageState extends State<PostsPage> with TickerProviderStateMixin {
   late bool isFavourite = false;
   late AnimationController _controller;
   AnimationController? ub;
-  FeedData? feedData ;
+  FeedData? feedData;
+
   int page = 0;
 
   @override
@@ -30,15 +31,12 @@ class PostsPageState extends State<PostsPage> with TickerProviderStateMixin {
     _controller = AnimationController(
       vsync: this,
     );
-
   }
 
   Future<void> getMyPosts(int skip, int take, bool fav) async {
     PostRequest request = PostRequest(skip, take, fav);
     feedData = AppConfig.feedItems = await BlipyUtils.getFeedItems(request);
-    setState(() {
-
-    });
+    setState(() {});
   }
 
   Future<FeedData?> loadMore(int skip, int take, bool fav) async {
@@ -49,6 +47,7 @@ class PostsPageState extends State<PostsPage> with TickerProviderStateMixin {
   }
 
   String favLottie() {
+
     if (!isFavourite) {
       return './assets/animations/u_b.json';
     } else {
@@ -56,23 +55,21 @@ class PostsPageState extends State<PostsPage> with TickerProviderStateMixin {
     }
   }
 
-
-
   void updateLottie() {
     _controller.reset();
     _controller.forward();
-    _controller.addStatusListener((status)  {
-      if(status == AnimationStatus.completed){
-        setState(() {});
-        isFavourite = !isFavourite;
-
+    _controller.addStatusListener((status) {
+      if (status == AnimationStatus.completed) {
+        setState(() {
+          isFavourite = !isFavourite;
+          page = 0;
+          getMyPosts(page * 20, 20, isFavourite);
+        });
 
       }
     });
-
-
-
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -91,17 +88,15 @@ class PostsPageState extends State<PostsPage> with TickerProviderStateMixin {
                   favLottie(),
                   repeat: true,
                   animate: true,
-                  reverse: false,
+                  reverse: true,
                   controller: _controller,
                   onLoaded: (composition) {
                     _controller.duration = composition.duration;
-
                   },
                 ),
               ),
               onTap: () {
-                    updateLottie();
-                    getMyPosts(page * 20, 20, isFavourite);
+                updateLottie();
               },
             )
           ],
@@ -119,17 +114,9 @@ class PostsPageState extends State<PostsPage> with TickerProviderStateMixin {
           ),
         ),
       ),
-      body: RefreshIndicator(
-        color: Colors.green,
-        onRefresh: () async {
-          page = 0;
-          await getMyPosts(page * 20, 20, isFavourite);
-        },
-        child: CustomCard(feedItems: feedData != null ? feedData!.items! : []),
-      ),
+      body: CustomCard(feedItems: feedData != null ? feedData!.items! : []),
     );
   }
 }
-
 
 PostsPageState postsPageState = PostsPageState();
